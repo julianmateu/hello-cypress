@@ -1,9 +1,9 @@
 {
   "name": "hello-node",
   "version": "1.0.0",
-  "description": "Hello world application in NodeJS and Typescript",
+  "description": "Hello world application in NodeJS using Typescript and Jest with coverage using Dev containers",
   "main": "./src/app.ts",
-  "repository": "github:julianmateu/hello-node",
+  "repository": "github:julianmateu/hello-ts",
   "author": "Julian Mateu <julianmateu@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -11,11 +11,14 @@
     "build": "tsc",
     "test": "jest --maxWorkers=1",
     "coverage": "jest --maxWorkers=1 --coverage",
-    "watch": "jest --maxWorkers=1 --coverage --watch"
+    "watch": "jest --maxWorkers=1 --coverage --watch",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",
     "@types/node": "*",
+    "cypress": "^12.8.1",
     "jest": "^29.5.0",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
